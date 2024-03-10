@@ -6,7 +6,7 @@ const Login = () => {
   const [cred,setCred]=useState({email:"",password:""});
     const handleSubmit=async(e)=>{
         e.preventDefault();
-        const res=await fetch("http://localhost:8000/loginuser",{
+        const res=await fetch("https://foodweb-eta.vercel.app/loginuser",{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
