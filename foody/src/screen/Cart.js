@@ -14,7 +14,7 @@ const Cart = () => {
 
     const handleCheckout=async()=>{
         let userEmail=localStorage.getItem("userEmail");
-        let res=await fetch("http://localhost:8000/orderData",{
+        let res=await fetch("https://foodweb-eta.vercel.app/orderData",{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
