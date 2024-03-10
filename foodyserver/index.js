@@ -10,7 +10,7 @@ const app=express();
 const port = process.env.port||8000
 app.use(cors(
   {
-  origin:[""],
+  origin:["https://foodweb-client.vercel.app"],
   methods:["POST","GET","PUT"],
   credentials:true
  }
