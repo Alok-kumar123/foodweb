@@ -10,7 +10,7 @@ const app=express();
 const port = process.env.port||8000
 app.use(cors(
   {
-  origin:["https://ecomm-fkart-client.vercel.app"],
+  origin:[""],
   methods:["POST","GET","PUT"],
   credentials:true
  }
