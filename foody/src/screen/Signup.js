@@ -6,7 +6,7 @@ const Signup = () => {
     const [cred,setCred]=useState({name:"",email:"",password:"",geolocation:""});
     const handleSubmit=async(e)=>{
         e.preventDefault();
-        const res=await fetch("http://localhost:8000/createuser",{
+        const res=await fetch("https://foodweb-eta.vercel.app/createuser",{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
