@@ -8,7 +8,7 @@ export default function Myorder() {
   console.log(orderData);
   const fetchMyorder = async () => {
     console.log(localStorage.getItem("userEmail"));
-    await fetch("http://localhost:8000/myorderData", {
+    await fetch("https://foodweb-eta.vercel.app/myorderData", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
