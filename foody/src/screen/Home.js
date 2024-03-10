@@ -10,7 +10,7 @@ export default function Home() {
   const [serach,setSearch]=useState([]);
   
   const loadData=async()=>{
-    let res=await fetch("http://localhost:8000/fooddata",{
+    let res=await fetch("https://foodweb-eta.vercel.app/fooddata",{
       method:"POST",
       headers:{
         'Content-Type':'application/json'
